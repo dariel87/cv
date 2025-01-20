@@ -42,153 +42,177 @@ createApp({
                 {
                     title: 'Sistem Informasi Sumber Daya Air',
                     subtitle: 'Visualisasi Geospatial',
-                    timeline: 'September 2013 - Sekarang',
+                    timeline: 'September 2013 - now',
                     url: 'http://jasatirta2.id/',
-                    description: 'Fullstack developer dan Project Manager. Aplikasi ini dikembangkan dengan menggunakan Laravel, Vue, React Native, PostgreSQL. Antara Backend dan Front serta aplikasi Android terhubung satu sama lain dengan menggunakan API.'
+                    description: `Fullstack developer.
+                    The application initially built using Yii version 1.1, but the rewrite using Laravel as API backend and VueJS as it frontend.
+                    I am also developing mobile app using React Native and Kotlin for officer in field.`
                 },
                 {
                     title: 'Optimally Organic',
                     subtitle: 'Platform e-commerce',
                     timeline: 'April 2015 - Juni 2015',
                     url: 'https://www.optimallyorganic.com/',
-                    description: 'Fullstack developer. dibangun dengan menggunakan framework Magento, MySql, Prototype.js'
+                    description: 'Fullstack developer. built using Magento, MySql and Prototype.js'
                 },
                 {
                     title: 'e-Procurement',
-                    subtitle: 'Sistem Informasi Lelang pekerjaan Perum Jasatirta II',
+                    subtitle: 'e-procurement for Perum Jasatirta II',
                     timeline: 'September 2016 - Februari 2017',
                     url: 'http://eproc.jasatirta2.co.id/',
-                    description: 'Fullstack developer. dibangun menggunakan Laravel, jQuery dan PostgreSQL.'
+                    description: 'Fullstack developer. built using Laravel, jQuery and PostgreSQL.'
                 },
                 {
-                    title: 'Marketplace media promosi',
+                    title: 'Promotion media marketplace',
                     subtitle: 'Platform e-commerce',
                     timeline: 'Oktober 2018 - Januari 2019',
                     url: 'http://adpoint.id/',
-                    description: 'Backend developer. dibangun menggunakan framework Magento2, MariaDB, dan Elastic search.'
+                    description: 'Backend developer. built using Magento2 framework, MariaDB, and Elastic search.'
                 },
                 {
-                    title: 'Aplikasi akunting',
-                    subtitle: 'Aplikasi akunting untuk dinas kebersihan kota Bandung',
+                    title: 'Accounting Application',
+                    subtitle: 'Accounting Application of dinas kebersihan kota Bandung',
                     timeline: 'Januari 2019 - April 2019',
                     url: 'http://adm-pdk.com/',
-                    description: 'Fullstack developer. dibangun menggunakan Laravel, jQuery dan PostgreSQL'
+                    description: 'Fullstack developer. built using Laravel, jQuery and PostgreSQL.'
                 },
                 {
-                    title: 'Aplikasi angkut sampah untuk dinas kebersihan kota Bandung.',
-                    subtitle: 'Aplikasi pengangkutan sampah',
+                    title: 'Garbage collector and transportation',
+                    subtitle: 'Garbage collector and transportation application for dinas kebersihan kota Bandung.',
                     timeline: 'April 2019 - Agustus 2019',
                     url: 'http://angkutsampah.com/bdg/',
-                    description: 'Fullstack developer. dibangun dengan menggunakan Laravel, jQuery, React Native dan postgreSQL. antara Backend dan Android app (React Native) dihubungkan dengan menggunakan API. selain mengembangkan webapp/API, disini juga dikembangkan aplikasi android untuk petugas lapangan.'
+                    description: `Fullstack developer. built using Laravel, jQuery and PostgreSQL.
+                    I am also developing mobile app using React Native for officer in field.`
                 },
                 {
                     title: 'Sistem Informasi Manajemen Monitoring Pertambangan',
-                    subtitle: 'Aplikasi pemantauan aktifitas pertambangan beserta legalisasi dokumen perusahaan tambang di provinsi Maluku Utara',
+                    subtitle: 'Mining activity monitoring application along with legalization of mining company documents in North Maluku province',
                     timeline: 'Januari 2020 - Desember 2020',
                     url: 'http://simonta.id/',
-                    description: 'dibangun menggunakan Laravel, jQuery, dan PostgreSQL.'
+                    description: 'built using Laravel, jQuery and PostgreSQL.'
                 },
                 {
                     title: 'Learning Management System (LMS)',
-                    subtitle: 'Aplikasi pembelajaran jarak jauh',
+                    subtitle: 'Long distance learning applications',
                     timeline: 'Maret 2020 - Januari 2021',
                     url: 'http://lms.madinaschool.sch.id/',
-                    description: 'Fullstack developer. LMS ini dibangun menggunakan Laravel, jQuery, PostgreSQL.'
+                    description: 'Fullstack developer. built using Laravel, jQuery and PostgreSQL.'
                 },
                 {
                     title: 'Sistem Manajemen Arsip Terpadu (SMART) - PT Krakatau Steel (Persero), Tbk.',
-                    subtitle: 'Aplikasi surat menyurat antar divisi, antar jabatan, serta antar pusat dan anak perusahaan',
+                    subtitle: 'Correspondence application between divisions, positions, and between centers and subsidiaries',
                     timeline: 'Maret 2021 - November 2021',
                     url: 'https://smart.krakatausteel.com',
-                    description: 'Fullstack developer. stack yang digunakan antara lain Laravel, Vue.js, MongoDB, Minio, Docker'
+                    description: 'Fullstack developer. The stacks used include Laravel, Vue.js, MongoDB, Minio, Docker'
                 },
                 {
-                    title: 'Sistem Informasi Rekapitulasi (SIREKAP)',
-                    subtitle: 'Aplikasi penghitungan dan rekapitulasi pemungutan suara pada Pemilu 2024',
+                    title: 'Sistem Informasi Rekapitulasi (SIREKAP) - Pemilu',
+                    subtitle: 'Application for counting and recapitulation of votes in the 2024 Pemilu Election',
                     timeline: 'Agustus 2023 - Maret 2024',
                     url: 'https://sirekap-web.kpu.go.id/',
-                    description: 'Sebagai Frontend Developer. stack yang digunakan antara lain, VueJS 3, Pinia, Axios'
+                    description: 'Frontend Developer. national scale application that built using stacks, VueJS 3, Pinia, Axios'
+                },
+                {
+                    title: 'Info publik pemilu 2024',
+                    subtitle: 'Public accessible application to monitor calculation results and recapitulation',
+                    timeline: 'Agustus 2023 - Maret 2024',
+                    url: 'https://pemilu2024.kpu.go.id/',
+                    description: 'Frontend Developer. national scale application that built using stacks, VueJS 3, Axios'
+                },
+                {
+                    title: 'Sistem Informasi Rekapitulasi (SIREKAP) - Pilkada',
+                    subtitle: 'Application for counting and recapitulation of votes in the 2024 Pilkada Election',
+                    timeline: 'Juni 2024 - December 2024',
+                    url: 'https://sirekappilkada-web.kpu.go.id/',
+                    description: 'Frontend Developer. national scale application that built using stacks, VueJS 3, Pinia, Axios'
+                },
+                {
+                    title: 'Info publik pilkada 2024',
+                    subtitle: 'Public accessible application to monitor calculation results and recapitulation',
+                    timeline: 'Juni 2024 - December 2024',
+                    url: 'https://pilkada2024.kpu.go.id/',
+                    description: 'Frontend Developer. national scale application that built using stacks, VueJS 3, Axios'
                 },
                 {
                     title: 'Aplikasi Android SISDA Perum Jasatirta II',
-                    subtitle: 'Aplikasi Android untuk pencatatan pengukuran variabel sumber daya air.',
-                    timeline: 'Juli 2024 - Agustus 2024',
+                    subtitle: 'Android application for recording water resource variable measurements.',
+                    timeline: 'Juni 2024 - Agustus 2024',
                     url: 'https://play.google.com/store/apps/details?id=co.id.jasatirta2.sisda&hl=en',
-                    description: 'Dibangun dengan menggunakan Kotlin'
+                    description: 'Built using kotlin as rewrite of React Native'
                 },
                 {
                     title: 'File Ingestion',
-                    subtitle: 'Aplikasi untuk memproses data PDF dengan bantuan API dari OpenAI',
+                    subtitle: 'Application for processing PDF data with the help of API from OpenAI',
                     timeline: 'September 2024 - November 2024',
                     url: 'https://ingest.wanakalapa.cloud/',
-                    description: 'Full stack developer. teknologi yang digunakan antara lain, express JS, MongoDB, VueJS 3, OpenAI'
+                    description: 'Full stack developer. tech stacks being used: express JS, MongoDB, VueJS 3, OpenAI'
                 },
             ],
             skills: [
                 {
                     name: 'Laravel',
                     icon: 'fa-brands fa-laravel',
-                    percent: '80%'
+                    stars: 4
                 },
                 {
                     name: 'Yii',
                     icon: 'fa-brands fa-php',
-                    percent: '70%'
+                    stars: 3
                 },
                 {
                     name: 'React JS',
                     icon: 'fa-brands fa-react',
-                    percent: '70%'
+                    stars: 4
                 },
                 {
                     name: 'React Native',
                     icon: 'fa-brands fa-react',
-                    percent: '70%'
+                    stars: 3
                 },
                 {
                     name: 'VueJS',
                     icon: 'fa-brands fa-vuejs',
-                    percent: '85%'
+                    stars: 4
                 },
                 {
                     name: 'CSS Framework',
                     icon: 'fa-brands fa-css3-alt',
-                    percent: '80%'
+                    stars: 4
                 },
                 {
                     name: 'MySql/MariaDB',
                     icon: 'fa-solid fa-database',
-                    percent: '60%'
+                    stars: 3
                 },
                 {
                     name: 'PostgreSQL',
                     icon: 'fa-solid fa-database',
-                    percent: '60%'
+                    stars: 3
                 },
                 {
                     name: 'MongoDB',
                     icon: 'fa-solid fa-database',
-                    percent: '60%'
+                    stars: 2
                 },
                 {
                     name: 'ExpressJS',
                     icon: 'fa-brands fa-node-js',
-                    percent: '80%'
+                    stars: 4
                 },
                 {
                     name: 'Kotlin',
                     icon: 'fa-brands fa-java',
-                    percent: '70%'
+                    stars: 3
                 },
                 {
                     name: 'Python',
                     icon: 'fa-brands fa-python',
-                    percent: '60%'
+                    stars: 3
                 },
                 {
                     name: 'Linux',
                     icon: 'fa-brands fa-linux',
-                    percent: '70%'
+                    stars: 3
                 }
             ]
         }

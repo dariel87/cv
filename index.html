@@ -16,90 +16,93 @@
         <link href="css/styles.css" rel="stylesheet" />
         <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
     </head>
-    <body id="page-top">
+    <body>
         <div id="app">
-            <!-- Navigation-->
-            <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
-                <a class="navbar-brand js-scroll-trigger" href="#page-top">
-                    <span class="d-block d-lg-none">Dariel Pratama Adipura</span>
-                    <span class="d-none d-lg-block"><img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="assets/img/me.png" alt="..." /></span>
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-                <div class="collapse navbar-collapse" id="navbarResponsive">
-                    <ul class="navbar-nav">
-                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">Tentang Saya</a></li>
-                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#experience">Pengalaman Kerja</a></li>
-                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#skills">Kemampuan</a></li>
-                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#interests">Ketertarikan</a></li>
-                    </ul>
-                </div>
-            </nav>
             <!-- Page Content-->
-            <div class="container-fluid p-0">
+            <div class="container-fluid">
                 <!-- About-->
-                <section class="resume-section" id="about">
-                    <div class="resume-section-content">
-                        <h1 class="mb-0">
-                            Dariel Pratama Adipura
-                        </h1>
-                        <div style="width: 150px; border-top: 3px solid #555;" class="my-3"></div>
-                        <h2>fullstack web developer</h2>
-                        <div class="my-5">
-                            <div class="mb-2"><i class="fa fa-home"></i> Perum Pesona Bumi Anggrek Blok D no. 3 Rt.05 Rw.04 Desa Citapen Kec. Cihampelas Kab. Bandung Barat 40562</div>
-                            <div class="mb-2"><i class="fa fa-phone me-2"></i> 0895 0676 2926</div>
-                            <div class="mb-2"><i class="fa fa-envelope me-2"></i> <a href="mailto:lamer.idiot@gmail.com">lamer.idiot@gmail.com</a></div>
-                        </div>
-                        <p class="lead mb-5">
-                            Nama saya Dariel Pratama Adipura, biasa dipanggil Dariel, lahir di Ciamis pada tanggal 21 Agustus 1987.
-                            saya sudah berkecimpung di dunia pemrograman komputer sejak 2011.
-                        </p>
-                        <div class="social-icons">
-                            <a class="social-icon" href="#!"><i class="fab fa-linkedin-in"></i></a>
-                            <a class="social-icon" href="https://github.com/dariel87"><i class="fab fa-github"></i></a>
-                            <a class="social-icon" href="https://www.facebook.com/dpa332"><i class="fab fa-facebook-f"></i></a>
-                        </div>
-                    </div>
-                </section>
-                <hr class="m-0" />
-                <!-- Experience-->
-                <section class="resume-section" id="experience">
-                    <div class="resume-section-content">
-                        <h2 class="mb-5">Pengalaman Kerja</h2>
-                        <div class="d-flex flex-column flex-md-row justify-content-between mb-5" v-for="(exp, i) in experiences" :key="i">
-                            <div class="flex-grow-1">
-                                <h3 class="mb-0">{{ exp.title }}</h3>
-                                <div class="subheading mb-3">{{ exp.subtitle }}</div>
-                                <p>URL: <a :href="exp.url" target="_blank">{{ exp.url }}</a></p>
-                                <p>{{ exp.description }}</p>
+                 <div class="row">
+                    <div class="col-lg-3 bg-primary pt-5">
+                        <div class="text-center"><img src="assets/img/me.png" class="rounded-circle border border-5 border-info" width="200" alt="me"></div>
+                        <div class="row mt-5">
+                            <div class="offset-2 col-8 text-white">
+                                <h3 class="mb-3 text-white">Reach me</h3>
+                                <table>
+                                    <tr>
+                                        <td style="vertical-align: top;"><i class="fa fa-home me-3"></i></td>
+                                        <td style="white-space: nowrap;">Perum Pesona Bumi Anggrek Blok D no.3 <br>
+                                            Rt.05 Rw.04 <br>
+                                            Desa Citapen <br>
+                                            Kec. Cihampelas <br>
+                                            Kab. Bandung Barat 40562</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="vertical-align: top;"><i class="fa fa-phone me-3"></i></td>
+                                        <td>0895 0676 2926</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="vertical-align: top;"><i class="fa fa-envelope me-3"></i></td>
+                                        <td><a href="mailto:lamer.idiot@gmail.com" class="text-white">lamer.idiot@gmail.com</a></td>
+                                    </tr>
+                                </table>
+
+                                <h3 class="mt-5 mb-3 text-white">Skills</h3>
+                                <ul class="list-unstyled">
+                                    <li v-for="skill in skills" :key="skill.name" class="mb-3">
+                                        <div class="d-flex align-items-center">
+                                            <span class="circle" v-for="n in skill.stars"></span>
+                                            <span class="circle circle-disabled" v-for="i in (5 - skill.stars)"></span>
+                                            <span class="ms-3">{{ skill.name }}</span>
+                                        </div>
+                                    </li>
+                                </ul>
+
+                                <h3 class="mt-5 mb-3 text-white">Github Account</h3>
+                                <a href="https://github.com/dariel87" class="text-white">https://github.com/dariel87</a>
                             </div>
-                            <div class="flex-shrink-0"><span class="text-primary">{{ exp.timeline }}</span></div>
                         </div>
                     </div>
-                </section>
-                <hr class="m-0" />
-                <!-- Skills-->
-                <section class="resume-section" id="skills">
-                    <div class="resume-section-content">
-                        <h2 class="mb-5">Kemampuan</h2>
-                        <template v-for="skill in skills">
-                            <div class="mb-3">
-                                <label for=""><i :class="skill.icon" class="me-2"></i>{{ skill.name }}</label>
-                                <div class="progress">
-                                    <div class="progress-bar progress-bar-striped bg-info text-start text-dark fw-bold ps-2" role="progressbar" :style="`width: ${skill.percent}`">{{ skill.percent.replace('%', '') }}</div>
+                    <div class="col-lg-9 px-5 mt-5">
+                        <div class="resume-section-content">
+                            <h1 class="mb-0">
+                                Dariel Pratama Adipura
+                            </h1>
+                            <div style="width: 150px; border-top: 3px solid #555;" class="my-3"></div>
+                            <h2>fullstack web developer</h2>
+                            <br>
+                            <p class="lead mb-5">
+                                My name is Dariel Pratama Adipura, I was born in August 21st 1987.<br />
+                                I am experienced web and mobile developer with a decade-long career in crafting robust digital solutions.
+                                Skilled in PHP, JavaScript/NodeJS, Python, and Kotlin, I am thrives as a full-stack developer but excels in creating intuitive and dynamic frontend interfaces.
+                                Passionate about delivering high-quality, user-centric applications.
+                            </p>
+                        </div>
+                        <hr>
+                        <section class="resume-section">
+                            <div class="resume-section-content">
+                                <h2 class="mb-5">Experiences</h2>
+                                <div class="d-flex flex-column flex-md-row justify-content-between mb-5" v-for="(exp, i) in experiences" :key="i">
+                                    <div class="flex-grow-1">
+                                        <h3 class="mb-0">{{ exp.title }}</h3>
+                                        <div class="subheading">{{ exp.subtitle }}</div>
+                                        <div class="mb-3 text-primary"><i class="fa fa-calendar"></i> {{ exp.timeline }}</div>
+                                        <p>URL: <a :href="exp.url" target="_blank">{{ exp.url }}</a></p>
+                                        <p>{{ exp.description }}</p>
+                                    </div>
+                                    <div class="flex-shrink-0"><span class="text-primary"></span></div>
                                 </div>
                             </div>
-                        </template>
+                        </section>
+                        <hr>
+                        <section class="resume-section" id="interests">
+                            <div class="resume-section-content">
+                                <h2 class="mb-5">Interests</h2>
+                                <p>In addition to the pleasure of working as a programmer, in my daily life, I also enjoy fishing (using the casting technique). I also make my own bait for fishing, both for my own use and for sale to people in need.</p>
+                                <br><br><br><br><br>
+                            </div>
+                        </section>
                     </div>
-                </section>
-                <hr class="m-0" />
-                <!-- Interests-->
-                <section class="resume-section" id="interests">
-                    <div class="resume-section-content">
-                        <h2 class="mb-5">Ketertarikan</h2>
-                        <p>Selain kesenangan bekerja sebagai programmer, di keseharian, saya juga senang memancing (dengan teknik <i>casting</i>). saya juga membuat sendiri umpan untuk memancing, baik untuk pemakaian sendiri maupun dijual kepada orang yang membutuhkan.</p>
-                        <br><br><br><br><br>
-                    </div>
-                </section>
+                 </div>
             </div>
         </div>
         <!-- Bootstrap core JS-->
