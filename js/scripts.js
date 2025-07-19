@@ -175,9 +175,14 @@ createApp({
                     stars: 4
                 },
                 {
-                    name: 'CSS Framework',
+                    name: 'Bootstrap',
                     icon: 'fa-brands fa-css3-alt',
                     stars: 4
+                },
+                {
+                    name: 'Tailwind',
+                    icon: 'fa-brands fa-css3-alt',
+                    stars: 3
                 },
                 {
                     name: 'MySql/MariaDB',
@@ -192,12 +197,12 @@ createApp({
                 {
                     name: 'MongoDB',
                     icon: 'fa-solid fa-database',
-                    stars: 2
+                    stars: 3
                 },
                 {
                     name: 'ExpressJS',
                     icon: 'fa-brands fa-node-js',
-                    stars: 4
+                    stars: 3
                 },
                 {
                     name: 'Kotlin',
