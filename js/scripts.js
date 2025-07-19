@@ -147,6 +147,13 @@ createApp({
                     url: 'https://ingest.wanakalapa.cloud/',
                     description: 'Full stack developer. tech stacks being used: express JS, MongoDB, VueJS 3, OpenAI'
                 },
+                {
+                    title: 'Recruitment+',
+                    subtitle: 'Application for Job Hiring. Hiring manager can post job/open position and Job seeker can apply to many open positions',
+                    timeline: 'April 2025 - June 2025',
+                    url: 'https://rplus.panduwana.com/',
+                    description: 'Frontend developer. tech stacks being used: NuxtJS (Vue), PostgreSQL, Go, Kafka, Temporal, Zitadel'
+                },
             ],
             skills: [
                 {
